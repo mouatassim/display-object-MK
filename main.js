@@ -35,10 +35,6 @@ class FormComponent {
         statusSelect.innerHTML = oppoStatus.map(oppo => `<option>${oppo.STATUS}</option>`).join('');
     }
 
-    getCurrentSuccess() {
-        return this.chosenOption.SUCCESS;
-    }
-
     updateSelectedOption(index) {
         this.chosenOption = oppoStatus[index];
         //PS: i believe that this input should be disabled from editing on the HTML
