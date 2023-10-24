@@ -1,0 +1,71 @@
+:root {
+    --color-primary: #111113ff;
+    --color-secondry: #333;
+    --color-text-light: #fefefeff;
+    --color-shadow :rgba(11, 12, 1,0.2);
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+        "Segoe UI Symbol";
+    font-weight: small;
+    font-size: .9rem;
+    line-height: .9;
+    color: var(--color-primary);
+    text-rendering: optimizeLegibility;
+}
+form {
+    margin: 2rem;
+}
+select,
+input[name="success"],
+select {
+  border: 1px solid var(--color-secondry);
+  border-radius: 5px;
+  padding: .1rem .2rem;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+select {
+  background-color: transparent;
+}
+input[name="success"]:focus,
+select:focus {
+  border-color: var(--color-text-medium);
+  outline: 0;
+  box-shadow: 0 0 0 2px var(--color-shadow); 
+}
+
+select:focus {
+    padding-right: 2rem;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+button {
+    display: block;
+    margin-top: 1rem;
+    color: var(--color-text-light);
+    border: 0;
+    padding: .2rem .4rem;
+    border-radius: 5px;
+    outline: 0;
+    font-weight: normal;
+    background: var(--color-primary);
+  }
+  
+  
+button:hover {
+    background-color: var(--color-text-light);
+    color: var(--color-secondry);
+    border: 1px solid var(--color-primary);
+    cursor: pointer;
+  }
+
+.output {
+    margin: 2rem;
+}
