@@ -48,7 +48,7 @@ class FormComponent {
 
     getOutput(obj) {
         return {
-            status: obj.STATUS,
+            status: +obj.STATUS.split('.')[0],
             success: obj.SUCCESS,
         };
     }
